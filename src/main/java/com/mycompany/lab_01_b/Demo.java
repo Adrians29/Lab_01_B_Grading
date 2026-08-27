@@ -12,5 +12,10 @@ public class Demo {
     public static void main(String[] args) {
         GradedActivity lab = new GradedActivity();
         lab.setScore(92.5);
+        
+        PassFailExam passFailExam = new PassFailExam(10, 4, 70.0);
+        
+        Essay essay = new Essay();
+        essay.setScore(20.0, 15.0, 15.0, 22.0);
     }
 }
