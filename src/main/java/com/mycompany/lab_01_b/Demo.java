@@ -17,5 +17,13 @@ public class Demo {
         
         Essay essay = new Essay();
         essay.setScore(20.0, 15.0, 15.0, 22.0);
+        
+        FinalExam finalExam = new FinalExam(40, 1);
+        
+        CourseGrades courseGrades = new CourseGrades();
+        courseGrades.setLab(lab);
+        courseGrades.setPassFailExam(passFailExam);
+        courseGrades.setEssay(essay);
+        courseGrades.setFinalExam(finalExam);
     }
 }
