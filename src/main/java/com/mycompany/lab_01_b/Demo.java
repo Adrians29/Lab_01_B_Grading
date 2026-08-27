@@ -25,5 +25,21 @@ public class Demo {
         courseGrades.setPassFailExam(passFailExam);
         courseGrades.setEssay(essay);
         courseGrades.setFinalExam(finalExam);
+        
+        System.out.println("=== COURSE GRADES REPORT ===");
+        System.out.println(courseGrades);
+        
+        System.out.println("\n=== STATISTICAL ANALYSIS ===");
+        System.out.printf("Average Score: %.2f\n", courseGrades.getAverage());
+    
+        GradedActivity highest = courseGrades.getHighest();
+        if (highest != null) {
+            System.out.println("Highest Grade: " + highest.getScore() + " (Letter: " + highest.getGrade() + ")");
+        }
+        
+        GradedActivity lowest = courseGrades.getLowest();
+        if (lowest != null) {
+            System.out.println("Lowest Grade: " + lowest.getScore() + " (Letter: " + lowest.getGrade() + ")");
+        }
     }
 }
